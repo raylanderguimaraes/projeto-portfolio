@@ -232,6 +232,9 @@ h2 {
         display: none;
     }
 
+
+
+    /*================ESTILO BANNER RESPONSIVO==========*/
     .banner {
 
         padding: 0;
@@ -272,6 +275,10 @@ h2 {
         display: none;
     }
 
+
+
+
+    /*================ESTILO BANNER RESPONSIVO==========*/
     .banner {
 
         padding: 0;
@@ -306,4 +313,18 @@ h2 {
         padding-left: 50px;
         gap: 20px;
     }
+
+
+    /*================ESTILO ABOUT RESPONSIVO==========*/
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .perfil-description p {
+        text-align: justify;
+    }
+
+
 }
