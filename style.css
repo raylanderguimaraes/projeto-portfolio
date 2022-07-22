@@ -20,7 +20,7 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
- h2 {
+h2 {
     font-size: 35px;
     margin-bottom: 20px;
     color: #fff;
@@ -57,7 +57,7 @@ body {
 .menu-list ul {
     display: flex;
     list-style: none;
-    
+
     gap: 20px;
 }
 
@@ -105,8 +105,6 @@ body {
     display: block;
     padding-top: 100px;
     padding-left: 100px;
-
-
 }
 
 .banner-description h1 {
@@ -188,7 +186,7 @@ body {
     max-width: 100vw;
     flex-direction: column;
     margin: auto;
-    
+
 }
 
 .about {
@@ -204,6 +202,7 @@ body {
     gap: 50px;
 
 }
+
 .about img {
     max-width: 400px;
     max-height: 400px;
@@ -217,4 +216,94 @@ body {
 .about .perfil-description p {
     line-height: 30px;
     font-size: 18px;
+}
+
+
+/* =======RESPONSIVIDADE============= */
+
+@media(max-width: 480px) {
+
+    /* body {
+        overflow-x: hidden;
+        background-color: #000;
+    } */
+
+    .menu-list {
+        display: none;
+    }
+
+    .banner {
+
+        padding: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .banner-description {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+
+
+    .banner .social-medias {
+        display: block;
+
+    }
+
+    .banner .social-medias ul {
+        display: flex;
+        justify-content: center;
+        padding-top: 250px;
+        padding-left: 50px;
+        gap: 20px;
+    }
+
+
+}
+
+@media(max-width: 780px) {
+    .menu-list {
+        display: none;
+    }
+
+    .banner {
+
+        padding: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .banner-description {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    .banner-description p {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .banner .social-medias {
+        display: block;
+
+    }
+
+    .banner .social-medias ul {
+        display: flex;
+        justify-content: center;
+        padding-top: 200px;
+        padding-left: 50px;
+        gap: 20px;
+    }
 }
