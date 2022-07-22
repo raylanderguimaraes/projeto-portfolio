@@ -248,8 +248,8 @@ h2 {
     }
 
     .banner-description p {
-        margin-top: 50px;
-        margin-bottom: 100px;
+        margin-top: 25px;
+        margin-bottom: 200px;
     }
 
     .banner .social-medias {
@@ -260,7 +260,7 @@ h2 {
     .banner .social-medias ul {
         display: flex;
         justify-content: center;
-        padding-top: 200px;
+        padding-top: 220px;
         padding-left: 50px;
         gap: 20px;
     }
@@ -313,6 +313,10 @@ h2 {
         padding-top: 20px;
 
     }
+    .banner-description p {
+        margin-top: 55px;
+        margin-bottom: 80px;
+    }
 
 
 
@@ -324,7 +328,7 @@ h2 {
     .banner .social-medias ul {
         display: flex;
         justify-content: center;
-        padding-top: 250px;
+        padding-top: 220px;
         padding-left: 50px;
         gap: 20px;
     }
