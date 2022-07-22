@@ -267,6 +267,17 @@ h2 {
         gap: 20px;
     }
 
+     /*================ESTILO ABOUT RESPONSIVO==========*/
+
+     .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .perfil-description p {
+        text-align: justify;
+    }
+
 
 }
 
