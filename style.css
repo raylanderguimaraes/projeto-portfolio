@@ -221,6 +221,68 @@ h2 {
 
 /* =======RESPONSIVIDADE============= */
 
+@media(max-width: 780px) {
+    .menu-list {
+        display: none;
+    }
+
+
+
+
+    /*================ESTILO BANNER RESPONSIVO==========*/
+    .banner {
+
+        padding: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .banner-description {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    .banner-description p {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .banner .social-medias {
+        display: block;
+
+    }
+
+    .banner .social-medias ul {
+        display: flex;
+        justify-content: center;
+        padding-top: 200px;
+        padding-left: 50px;
+        gap: 20px;
+    }
+
+
+    /*================ESTILO ABOUT RESPONSIVO==========*/
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .perfil-description p {
+        text-align: justify;
+    }
+
+
+}
+
+
+
+
 @media(max-width: 480px) {
 
     /* body {
@@ -281,61 +343,3 @@ h2 {
 
 }
 
-@media(max-width: 780px) {
-    .menu-list {
-        display: none;
-    }
-
-
-
-
-    /*================ESTILO BANNER RESPONSIVO==========*/
-    .banner {
-
-        padding: 0;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-    }
-
-    .banner-description {
-        display: block;
-        text-align: center;
-        padding-top: 20px;
-
-    }
-
-    .banner-description p {
-        margin-top: 50px;
-        margin-bottom: 100px;
-    }
-
-    .banner .social-medias {
-        display: block;
-
-    }
-
-    .banner .social-medias ul {
-        display: flex;
-        justify-content: center;
-        padding-top: 200px;
-        padding-left: 50px;
-        gap: 20px;
-    }
-
-
-    /*================ESTILO ABOUT RESPONSIVO==========*/
-
-    .about {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about .perfil-description p {
-        text-align: justify;
-    }
-
-
-}
