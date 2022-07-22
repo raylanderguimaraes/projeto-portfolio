@@ -348,9 +348,10 @@ h2 {
 }
 
 @media(min-width: 414px) and (max-width: 479px) {
+   
     .banner-description p {
         margin-top: 50px;
-        margin-bottom: 550px;
+        margin-bottom: 350px;
         
     }
 }
