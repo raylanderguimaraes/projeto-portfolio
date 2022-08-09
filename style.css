@@ -2,6 +2,11 @@
 FOTO BG
 https://unsplash.com/photos/Koxa-GX_5zs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 Photo by <a href="https://unsplash.com/@badashproducts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ash Edmonds</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+<a href="https://www.flaticon.com/free-icons/html5" title="html5 icons">Html5 icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">Html 5 icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Kiranshastry - Flaticon</a>
    */
 
 
@@ -103,6 +108,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     display: block;
+    margin: auto;
     padding-top: 100px;
     padding-left: 100px;
 }
@@ -217,6 +223,21 @@ h2 {
     line-height: 30px;
     font-size: 18px;
 }
+
+
+
+/* =======ESTILO SKILLS============= */
+
+
+
+.grid-tecnologies-items img{
+    width: 74px;
+}
+
+
+
+
+
 
 
 /* =======RESPONSIVIDADE============= */
