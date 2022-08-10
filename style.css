@@ -226,30 +226,44 @@ h2 {
 
 
 
+
+
 /* =======ESTILO SKILLS============= */
-.skills h2 {
+
+
+
+.skills  {
+    box-sizing: border-box;
     text-align: center;
+    
 }
 .grid-tecnologies {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     padding: 50px;
+    
 }
 
-
+.grid-tecnologies-items {
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 
 .grid-tecnologies-items img{
     width: 74px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: center;   
 }
 
-.img-wrapper {
-    text-align: center;
+.grid-tecnologies-items h3 {
+
     margin-bottom: 10px;
 }
+
+
 
 
 
@@ -312,6 +326,16 @@ h2 {
 
     .about .perfil-description p {
         text-align: justify;
+    }
+
+
+    /* =======ESTILO SKILLS============= */
+
+    .grid-tecnologies {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
     }
 
 
@@ -398,4 +422,7 @@ h2 {
         margin-top: 30px;
         margin-bottom: 350px;
     }
+
+
+
 }
