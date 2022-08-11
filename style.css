@@ -7,6 +7,7 @@ Photo by <a href="https://unsplash.com/@badashproducts?utm_source=unsplash&utm_m
 <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Kiranshastry - Flaticon</a>
+<a href="https://www.flaticon.com/br/icones-gratis/github" title="github ícones">Github ícones criados por Pixel perfect - Flaticon</a>
    */
 
 
@@ -265,6 +266,98 @@ h2 {
 }
 
 
+/* =======ESTILO PROJETOS============= */
+
+
+.section-projects {
+    margin-block: 80px;
+    padding-block: 30px;
+}
+
+.section-projects h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    transition: opacity .3s;
+
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .5;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+}
+
+.card-info h3 {
+    color: #eee;
+    font-weight: 900;
+}
+
+.card-info p {
+    color: #fff;
+    font-weight: 700;
+    
+}
+
+.card-info button {
+    font-size: 15px;
+    text-decoration: none;
+    margin-block: 15px;
+    padding: 8px;
+    background-color: #000;
+    border: 3px solid rgb(184, 179, 179);
+    color: rgb(184, 179, 179);
+    border-radius: 8px;
+    transition: box-shadow 0.1s;
+    cursor: pointer;
+}
+
+.card-info button:hover {
+    border: 4px solid #14fff1;
+    color: #14fff1;
+    box-shadow: 0px 0px 35px #14fff1, 0px 0px 15px #00d9ffc0 inset;
+    text-shadow: 0px 0px 10px #14fff1, 0px 0px 3px #14fff1;
+}
+
+.card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+
 
 /* =======ESTILO CONTATO============= */
 
@@ -440,6 +533,16 @@ h2 {
         width: 100%;
     }
 
+
+/* =======ESTILO Projetos============= */
+    
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+       
+    }
 
 }
 
