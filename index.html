@@ -226,16 +226,18 @@
 
     </div>
 
-    <footer id="contact">
+    <section id="contact">
 
 
         <div class="form-container">
             <h2>Contato</h2>
             <form>
-                <label> Nome: </label><input type="text">
-                <label>Sobrenome:</label> <input type="text">
-                <label>e-mail: </label><input type="email">
-                <button type="submit" class="btn-form">Enviar</button>
+                <label> Nome: </label><input type="text" id="user-name" name="name">
+                <label>Sobrenome:</label> <input type="text" id="user-surname" name="surname">
+                <label>e-mail: </label><input type="email" id="email">
+                <label>Deixe sua mensagem:</label><textarea rows="10" cols="50" id="message" name="message"></textarea>
+
+                <button type="submit" class="btn-form" id="btn-submit">Enviar</button>
             </form>
         </div>
 
@@ -251,6 +253,13 @@
                     <li><i class="fa fa-instagram"></i></li>
                 </a>
             </ul>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div id="autor">
+            <p> &copy Deenvolvido por Raylander Guimarães, 2022.</p>
         </div>
     </footer>
 
