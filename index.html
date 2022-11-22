@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
-<body>
+<body class="no-overflow">
 
     <nav class="menu">
-        <div class="menu-nav">
+        <div class="menu-nav active">
             <div class="logo">Raylander Guimarães</div>
             <div class="menu-list">
                 <ul>
@@ -32,8 +32,15 @@
                     </a>
                 </ul>
             </div>
+
         </div>
     </nav>
+
+
+
+    <button id="btn-expand"><i class="ph-list"></i></button>
+
+
 
     <section class="banner">
 
@@ -182,7 +189,13 @@
                             Projeto desenvolvido durante a NLW, um evento de uma semana oferecido pela Rocketseat, onde
                             desenvolvemos uma landing page completa de uma clínica médica.
                         </p>
-                        <a href="https://raylanderguimaraes.github.io/doctorcare/" target="_blank">Saiba mais</a>
+
+                        <div class="card-buttons">
+                            <a href="https://raylanderguimaraes.github.io/doctorcare/" target="_blank">Saiba mais</a>
+                            <a href="https://github.com/raylanderguimaraes/doctorcare" target="_blank"><i
+                                    class="fa fa-github"></i> GitHub</a>
+                        </div>
+
                     </div>
                 </div>
 
@@ -199,7 +212,14 @@
                             hamburgeres mais vendidos, cardápio completo da hamburgueria e contato para fazer o pedido
                             do lanche.
                         </p>
-                        <a href="https://moods-lanches.netlify.app/" target="_blank">Saiba mais</a>
+
+                        <div class="card-buttons">
+                            <a href="https://moods-lanches.netlify.app/" target="_blank">Saiba mais</a>
+                            <a href="https://github.com/raylanderguimaraes/moods-lanches" target="_blank">
+                                <i class="fa fa-github"></i> GitHub</a>
+                        </div>
+
+
                     </div>
                 </div>
 
@@ -211,8 +231,15 @@
                     <div class="card-info">
                         <h3>Vidraçaria Loureiro</h3>
                         <h4>Site de uma vidraçaria</h4>
-                        <p>Um site desenvolvido para uma vidraçaria, nesse projeto foi utilizado o Bootstrap para estilizar os elementos e seções do site.</p>
-                        <a href="https://vidracarialoureiro.netlify.app/">Saiba mais</a>
+                        <p>Um site desenvolvido para uma vidraçaria, nesse projeto foi utilizado o Bootstrap para
+                            estilizar os elementos e seções do site.</p>
+
+                        <div class="card-buttons">
+                            <a href="https://vidracarialoureiro.netlify.app/">Saiba mais</a>
+                            <a href="https://github.com/raylanderguimaraes/vidracaria-loureiro" target="_blank">
+                                <i class="fa fa-github"></i> GitHub</a>
+                        </div>
+
                     </div>
                 </div>
 
@@ -264,7 +291,7 @@
 
 
 
-
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="./script.js"></script>
 </body>
 
