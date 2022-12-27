@@ -183,7 +183,8 @@ h2 {
     color: rgb(184, 179, 179);
     border-radius: 8px;
     transition: box-shadow 0.1s;
-
+    cursor: pointer;
+    
 }
 
 .btn-contact:hover {
@@ -494,13 +495,6 @@ h2 {
 
 
 
-
-
-
-
-
-
-
 #btn-expand {
     display: none;
     border: none;
@@ -511,10 +505,9 @@ h2 {
 }
 
 
-
 /* =======RESPONSIVIDADE============= */
 
-@media(max-width: 780px) {
+@media (min-width: 315px) and (max-width: 780px) {
     
     #btn-expand {
         display: block;
@@ -525,8 +518,9 @@ h2 {
         z-index: 9999;
     }
 
-    /*Botão para menu expandido*/
- 
+    .menu-list {
+        display: none;
+    }
 
 
 
@@ -555,7 +549,6 @@ h2 {
 
     .banner .social-medias {
         display: block;
-
     }
 
     .banner .social-medias ul {
@@ -565,6 +558,7 @@ h2 {
         padding-left: 50px;
         gap: 20px;
     }
+    
 
 
     /*================ESTILO ABOUT RESPONSIVO==========*/
@@ -619,72 +613,11 @@ h2 {
 
 
 
-@media (min-width: 480) and (max-width: 779px) {
-
-    /* body {
-        overflow-x: hidden;
-        background-color: #000;
-    } */
-
-    .menu-list {
-        display: none;
-    }
 
 
 
-    /*================ESTILO BANNER RESPONSIVO==========*/
-    .banner {
 
-        padding: 0;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-    }
-
-    .banner-description {
-        display: block;
-        text-align: center;
-        padding-top: 20px;
-
-    }
-
-    .banner-description p {
-        margin-top: 55px;
-        margin-bottom: 150px;
-    }
-
-
-
-    .banner .social-medias {
-        display: block;
-
-    }
-
-    .banner .social-medias ul {
-        display: flex;
-        justify-content: center;
-        padding-top: 220px;
-        padding-left: 50px;
-        gap: 20px;
-    }
-
-    /*================ESTILO ABOUT RESPONSIVO==========*/
-
-    #about {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #about .perfil-description p {
-        text-align: justify;
-    }
-
-
-}
-
-@media(min-width: 414px) and (max-width: 479px) {
+/* @media(min-width: 414px) and (max-width: 479px) {
 
     .banner-description p {
         margin-top: 50px;
@@ -692,14 +625,19 @@ h2 {
 
     }
 
- 
-}
 
-@media(min-width: 375px) and (max-width: 413px) {
+    
+
+ 
+} */
+
+/* @media(min-width: 375px) and (max-width: 413px) {
     .banner-description p {
         margin-top: 30px;
         margin-bottom: 350px;
     }
+
+    
 
     .card{
         width: 250px;
@@ -708,4 +646,4 @@ h2 {
 
 
    
-}
+} */

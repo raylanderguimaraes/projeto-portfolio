@@ -1,9 +1,7 @@
-let btnExpand = document.getElementById("btn-expand")
 
-let menuExpanded = document.getElementById("menu-epanded")
+let btnContact = document.getElementById("btn-contact")
 
-function mostraMenu() {
-   
+function clicou() {
+    console.log("clicou")
 }
 
-btnExpand.addEventListener('click', mostraMenu )
