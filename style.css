@@ -43,6 +43,7 @@ h2 {
 /* =======ESTILO MENU============= */
 .logo {
     font-weight: 700;
+    
 }
 
 .menu {
@@ -56,11 +57,12 @@ h2 {
 .menu-nav {
     width: 80%;
     margin: auto;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;    
     text-transform: uppercase;
+    transition: all .3s ease-in-out;
 }
 
 .menu-list ul {
@@ -99,6 +101,27 @@ h2 {
 }
 
 
+/* ==========BUTTONS MENU MOBILE=========== */
+
+#btn-expand {
+    display: none;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+
+#btn-close {
+    display: none;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
 
 
 
@@ -109,7 +132,8 @@ h2 {
 .banner {
     max-width: 100%;
     height: 100vh;
-    background-image: url('./assets/bg-portfolio.jpg');
+    background: rgba(0,0,0,0.4) url('./assets/bg-portfolio.jpg');
+    background-blend-mode:darken;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,10 +141,12 @@ h2 {
     margin: auto;
     padding-top: 100px;
     padding-left: 100px;
-
+    
 }
 
-
+.banner-description {
+    margin-top: 150px;
+}
 
 .banner-description h1 {
     font-size: 50px;
@@ -128,11 +154,7 @@ h2 {
     color: #14fff1;
 }
 
-/* .banner-description h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #fff;
-} */
+
 
 .banner-description p {
     font-size: 18px;
@@ -498,20 +520,50 @@ h2 {
 
 
 
-#btn-expand {
-    display: none;
-    border: none;
-    color: white;
-    background-color: black;
-    font-size: 25px;
-    cursor: pointer;
-}
 
 
 /* =======RESPONSIVIDADE============= */
 
 @media (min-width: 315px) and (max-width: 780px) {
     
+  
+    .menu-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+    }
+  
+
+   .active {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        width: 100vw;
+        height: 100vh;
+        justify-content:flex-start;
+        z-index: 9999;
+        text-transform: uppercase;
+    }
+
+    .logo {
+        display: flex;
+        align-self: flex-start;
+        margin: 30px;
+    }
+
+    .menu-list ul {
+        margin-top: 100px;
+        flex-direction: column;
+        display: none;
+        
+    }
+
+    .menu-list-active ul {
+        display: flex;
+    }
+
     #btn-expand {
         display: block;
         position: absolute;
@@ -521,8 +573,18 @@ h2 {
         z-index: 9999;
     }
 
-    .menu-list {
-        display: none;
+    #btn-close {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        padding-right: 25px;
+        z-index: 9999;
+    }
+
+    
+    .btn-close {
+       visibility: hidden;
     }
 
 

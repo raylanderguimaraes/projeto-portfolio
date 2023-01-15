@@ -12,33 +12,39 @@
 </head>
 
 <body class="no-overflow">
+    <header id="header" >
+        <nav class="menu ">
+            <div class="menu-nav ">
+                <div class="logo">Raylander Guimarães</div>
+                <div class="menu-list">
 
-    <nav class="menu">
-        <div class="menu-nav active">
-            <div class="logo">Raylander Guimarães</div>
-            <div class="menu-list">
-                <ul>
-                    <a href="#">
-                        <li>Home</li>
-                    </a>
-                    <a href="#about">
-                        <li>Sobre</li>
-                    </a>
-                    <a href="#section-projects">
-                        <li>Projetos</li>
-                    </a>
-                    <a href="#contact">
-                        <li>Contato</li>
-                    </a>
-                </ul>
+                    <ul>
+                        <a href="#" onclick="closeMenu()">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about" onclick="closeMenu()">
+                            <li>Sobre</li>
+                        </a>
+                        <a href="#section-projects" onclick="closeMenu()">
+                            <li>Projetos</li>
+                        </a>
+                        <a href="#contact" onclick="closeMenu()">
+                            <li>Contato</li>
+                        </a>
+                    </ul>
+                </div>
+
             </div>
-
+        </nav>
+        <div class="menu-collapse">
+            <button id="btn-expand" class="btn-expand"><i class="ph-list "></i></button>
+            <button id="btn-close" class="btn-close"><i class="ph-x"></i></button>
         </div>
-    </nav>
+    </header>
 
 
-    <!-- 
-    <button id="btn-expand"><i class="ph-list"></i></button> -->
+
+
 
 
 
@@ -77,7 +83,7 @@
     <div class="container">
 
 
-        <section id="about">
+        <section id="about" class="scrolling">
             <div class="perfil-img">
                 <img src="./assets/foto-about.JPG" alt="">
             </div>
@@ -93,10 +99,10 @@
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" >
             <h2>Tecnologias que Utilizo</h2>
 
-            <div class="grid-tecnologies">
+            <div class="grid-tecnologies scrolling">
 
                 <div class="grid-tecnologies-items">
                     <div class="img-wrapper">
@@ -115,7 +121,8 @@
                         <h3>CSS 3</h3>
                     </div>
 
-                    <p>Com o CSS podemos dar estilo a sua página deixando ele muito mais bonito, com uma aparência moderna que transmita profissionalismo, valorizando sua empresa ainda mais.
+                    <p>Com o CSS podemos dar estilo a sua página deixando ele muito mais bonito, com uma aparência
+                        moderna que transmita profissionalismo, valorizando sua empresa ainda mais.
                     </p>
                 </div>
                 <div class="grid-tecnologies-items">
@@ -124,7 +131,8 @@
                         <h3>Javascript</h3>
                     </div>
 
-                    <p>Utilizando o JavaScript damos vida ao seu site, deixando ele muito mais dinâmico, com animações e funcionalidades de acordo com as suas necessidades.
+                    <p>Utilizando o JavaScript damos vida ao seu site, deixando ele muito mais dinâmico, com animações e
+                        funcionalidades de acordo com as suas necessidades.
                     </p>
                 </div>
                 <div class="grid-tecnologies-items">
@@ -133,7 +141,8 @@
                         <h3>Bootstrap</h3>
                     </div>
 
-                    <p>Uma ferramenta poderosa para construção de interfaces estilosas, utilizando componentes padronizados.
+                    <p>Uma ferramenta poderosa para construção de interfaces estilosas, utilizando componentes
+                        padronizados.
                     </p>
                 </div>
                 <div class="grid-tecnologies-items">
@@ -142,7 +151,8 @@
                         <h3>jQuery</h3>
                     </div>
 
-                    <p>Uma biblioteca JavaScript muito utilizada para criar soluções para as mais diversas aplicações Web.
+                    <p>Uma biblioteca JavaScript muito utilizada para criar soluções para as mais diversas aplicações
+                        Web.
                     </p>
                 </div>
                 <div class="grid-tecnologies-items">
@@ -151,7 +161,9 @@
                         <h3>React</h3>
                     </div>
 
-                    <p>O que há de mais moderno em tecnologia para criação de aplicações Web, Sites, e interfaces de usuário, uma ótima ferrmenta para alcançarmos ótimas performances em relação ao SEO. Além de permitir criar aplicações desde as mais simples até as mais complexas.
+                    <p>O que há de mais moderno em tecnologia para criação de aplicações Web, Sites, e interfaces de
+                        usuário, uma ótima ferrmenta para alcançarmos ótimas performances em relação ao SEO. Além de
+                        permitir criar aplicações desde as mais simples até as mais complexas.
                     </p>
                 </div>
             </div>
@@ -161,7 +173,7 @@
         <section id="section-projects">
             <h2>Projetos</h2>
 
-            <div class="projects">
+            <div class="projects scrolling">
 
                 <div class="card">
                     <div class="card-img-wrapper">
@@ -239,7 +251,7 @@
     <section id="contact">
 
 
-        <div class="form-container">
+        <div class="form-container scrolling">
             <h2>Contato</h2>
             <form>
                 <label> Nome: </label><input type="text" id="user-name" name="name">
@@ -251,7 +263,7 @@
             </form>
         </div>
 
-        <div class="social-medias">
+        <div class="social-medias scrolling">
             <ul>
                 <a href="https://github.com/raylanderguimaraes" target="_blank">
                     <li><i class="fa fa-github"></i></i></li>
@@ -276,8 +288,9 @@
 
 
 
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <script></script>
     <script src="./script.js"></script>
 </body>
 
